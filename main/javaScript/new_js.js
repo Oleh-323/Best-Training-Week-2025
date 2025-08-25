@@ -23,6 +23,8 @@ track.addEventListener('touchstart', e=>{ startX = e.touches[0].clientX; dx=0; }
 track.addEventListener('touchmove', e=>{ dx = e.touches[0].clientX - startX; }, {passive:true});
 track.addEventListener('touchend', ()=>{ if(Math.abs(dx) > TH){ go(dx>0 ? -1 : 1); } });
 
+
+//Функція для організаторів
 (function(){
   const root   = document.querySelector('.carousel_second');
   const track  = root.querySelector('.track_second');
@@ -55,5 +57,4 @@ track.addEventListener('touchend', ()=>{ if(Math.abs(dx) > TH){ go(dx>0 ? -1 : 1
   window.addEventListener('resize', update);
   update();
 })();
-
 

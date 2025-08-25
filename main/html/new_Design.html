@@ -22,11 +22,11 @@
       <nav class="position-of-right-menu">
         <div class="burger" id="burger">☰</div>
         <div class="menu" id="menu">
-          <a class="hiper-source" href="#">Про нас</a>
-          <a class="hiper-source" href="#">Спікери</a>
-          <a class="hiper-source" href="#">Організатори</a>
-          <a class="hiper-source" href="#">Відгуки</a>
-          <a class="hiper-source" href="#">Галерея</a>
+          <a class="hiper-source" href="#speakers">Спікери</a>
+          <a class="hiper-source" href="#org">Про нас</a>
+          <a class="hiper-source" href="#organithators">Організатори</a>
+          <a class="hiper-source" href="#reviews">Відгуки</a>
+          <a class="hiper-source" href="#galery">Галерея</a>
         </div>
       </nav>
     </div>
@@ -56,12 +56,17 @@
 <!-- Section3 -->
 <section class="section3">
 
+<!-- 
+
  <picture>
-    <!-- якщо ширина <=860px, підставляй мобільну -->
     <source srcset="../resources/Union_big.png" media="(max-width: 860px)">
-    <!-- дефолт — десктоп -->
-    <img class="pc_gradient_dr" src="../resources/Gradient_infp_Pc.png" alt="Section3">
+    
+    <source class="pc_gradient_dr" src="../resources/Gradient_infp_Pc.png" alt="Section3">
   </picture>
+
+ -->
+
+
   <div class="poles">
       
     <div class="pole">
@@ -108,12 +113,13 @@
 
 </section>
 
-<!-- Section4 -->
+<!-- Section4 
+<img class="phitp" src="../resources/phine.png" alt="bg" />
+-->
 
-<section class="section4" id="speakers">
-  <img class="phitp" src="../resources/phine.png" alt="bg" />
-
-  <div class="container wrap">
+<section class="section4" >
+  
+  <div class="container wrap" id="speakers">
     <h1 class="spikertitle">Спікери</h1>
     <div class="carousel" data-carousel>
       <div class="track" id="track">
@@ -274,8 +280,8 @@
     </div>
   </div>
 
-  <section class="org">  
-    <div class="org__wrap">
+  <section class="org" id="org">  
+    <div class="org__wrap"  >
       <div class="org__row org__row--hero ">
         <img class="org__logo" src="../resources/logowhite 1.png" alt="BEST Lviv">
         <h1 class="org__title titleOrg1">Організатор</h1>
@@ -316,8 +322,8 @@
 </section>
 
 <!-- Section6-->
-
-<section class="section6_second">
+<section class="bg-commons">
+<section class="section6_second" id="organithators">
   <h2 class="carousel_title">Команда організаторів</h2>
 
 
@@ -494,8 +500,155 @@
   </div>
 </section>
 
+<section class="section7">
+  <section class="bg-wrapper">
+  <div class="reviews" id="reviews">
+    <h1 class="title_reviews"><img class="apostrof" src="../resources/apostrof.png">Відгуки</h1>
 
+    <div class="viewport_reviews">
+      <div class="carousel_reviews">
 
+        <!-- radios -->
+        <input type="radio" name="rv" id="rv1" checked>
+        <input type="radio" name="rv" id="rv2">
+        <input type="radio" name="rv" id="rv3">
+        <input type="radio" name="rv" id="rv4">
+        <input type="radio" name="rv" id="rv5">
+
+        <!-- slides -->
+        <div class="track_reviews">
+          <article class="slide_reviews review-card">
+            <div class="review-card__quote">“</div>
+            <h3 class="review-card__name">Софія ПРЕКРАСНА</h3>
+            <div class="review-card__tag">Студент</div>
+            <p class="review-card__text">Івент — топ. Дуже круті спікери. Дякую за халявне печенько.</p>
+          </article>
+
+          <article class="slide_reviews review-card">
+            <div class="review-card__quote">“</div>
+            <h3 class="review-card__name">Андрій К.</h3>
+            <div class="review-card__tag">Студент</div>
+            <p class="review-card__text">Атмосфера🔥 Організація на рівні, контент практичний і корисний.</p>
+          </article>
+
+          <article class="slide_reviews review-card">
+            <div class="review-card__quote">“</div>
+            <h3 class="review-card__name">Марія Л.</h3>
+            <div class="review-card__tag">Учасниця</div>
+            <p class="review-card__text">Сподобалась розповідь Притули. Чекаю наступну подію!</p>
+          </article>
+
+          <article class="slide_reviews review-card">
+            <div class="review-card__quote">“</div>
+            <h3 class="review-card__name">Остап Д.</h3>
+            <div class="review-card__tag">Випускник</div>
+            <p class="review-card__text">Дуже сильні спікери, конкретні кейси та без води.</p>
+          </article>
+
+          <article class="slide_reviews review-card">
+            <div class="review-card__quote">“</div>
+            <h3 class="review-card__name">Катерина С.</h3>
+            <div class="review-card__tag">Студент</div>
+            <p class="review-card__text">Познайомилась там з Олегом, дуже класний хлопець, ще й до того один з організаторів😍😍😍</p>
+          </article>
+        </div>
+
+        <!-- arrows (як у твоїй другій каруселі) -->
+        <div class="arrows_reviews">
+          <!-- для rv1 -->
+          <label class="prev_reviews" for="rv5" data-for="rv1">‹</label>
+          <label class="next_reviews" for="rv2" data-for="rv1">›</label>
+          <!-- rv2 -->
+          <label class="prev_reviews" for="rv1" data-for="rv2">‹</label>
+          <label class="next_reviews" for="rv3" data-for="rv2">›</label>
+          <!-- rv3 -->
+          <label class="prev_reviews" for="rv2" data-for="rv3">‹</label>
+          <label class="next_reviews" for="rv4" data-for="rv3">›</label>
+          <!-- rv4 -->
+          <label class="prev_reviews" for="rv3" data-for="rv4">‹</label>
+          <label class="next_reviews" for="rv5" data-for="rv4">›</label>
+          <!-- rv5 -->
+          <label class="prev_reviews" for="rv4" data-for="rv5">‹</label>
+          <label class="next_reviews" for="rv1" data-for="rv5">›</label>
+        </div>
+
+        <!-- dots -->
+        <div class="dots_reviews">
+          <label for="rv1"></label>
+          <label for="rv2"></label>
+          <label for="rv3"></label>
+          <label for="rv4"></label>
+          <label for="rv5"></label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="galary" id="galery">
+    <div class="gallery-head">
+      <h2 class="gallery-title">Галерея</h2>
+      <p class="gallery-sub">Фотографії з попередніх подій</p>
+    </div>
+  
+    <div class="gallery" id="gallery">
+      <button class="nav prev" aria-label="Попередній">««</button>
+  
+      <div class="viewport">
+        <div class="columns">
+          <ul class="col">
+            <li class="carder"><img src="../resources/photo1.jpg"></li>
+            <li class="carder"><img src="../resources/photo2.jpg"></li>
+            <li class="carder"><img src="../resources/photo3.jpg"></li>
+            <li class="carder"><img src="../resources/photo4.jpg"></li>
+          </ul>
+          <ul class="col">
+            <li class="carder"><img src="../resources/photo5.jpg"></li>
+            <li class="carder"><img src="../resources/photo2.jpg"></li>
+            <li class="carder"><img src="../resources/photo3.jpg"></li>
+            <li class="carder"><img src="../resources/photo4.jpg"></li>
+          </ul>
+        </div>
+      </div>
+  
+      <button class="nav next" aria-label="Наступний">»»</button>
+    </div>
+  
+    <div class="dotss" id="gallery-dots"></div>
+   </section>
+  <!-- Відступ щоб легше було читати -->
+
+ 
+  
+
+  <!-- Відступ щоб легше було читати -->
+  </section>
+ </section>
+ 
+</section>
+<section class="section9">
+  <div class="footer-container">
+    
+    <div class="footer-left">
+      <h1 class="yearOfBTW">2025</h1>
+      <img class="logobtwithtext" src="../resources/logoBtwWithText.png" alt="logo">
+    </div>
+
+    <div class="footer-right">
+      <h1 class="seeYouOnBTW">До зустрічі на <br> BTW!</h1>
+      <div class="socials-footer">
+        <a href="#"><img class="iconka" src="../resources/instagram.png" alt="Instagram"></a>
+        <a href="#"><img class="iconka" src="../resources/telegram 1.png" alt="Telegram"></a>
+        <a href="#"><img class="iconka" src="../resources/facebook.png" alt="Facebook"></a>
+        <a href="#"><img class="iconka" src="../resources/Linkedin.png" alt="Linkedin"></a>
+        <a href="#"><img class="iconka" src="../resources/TikTok.png" alt="TikTok"></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script src="../javaScript/reviews.js" defer></script>
+<script src="../javaScript/galary.js"></script>
 <script src="../javaScript/new_js.js"></script>
 </body>
 </html>
