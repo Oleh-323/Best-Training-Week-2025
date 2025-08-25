@@ -5,7 +5,6 @@ body{
   font-family: 'Gilroy', sans-serif;
 }
 
-  /* робимо header прилипаючим */
 header {
   position: fixed;
   top: 0;
@@ -27,14 +26,25 @@ header {
 @media (max-width:650px){
   .burger{
     display:block;
-    position:absolute; right:10px; top:50%; transform:translateY(-50%);
-    font-size:28px; color:#fff; cursor:pointer; z-index:1100;
+    position:absolute; 
+    right:10px; 
+    top:50%; 
+    transform:translateY(-50%);
+    font-size:28px; 
+    color:#fff; 
+    cursor:pointer; 
+    z-index:1100;
   }
   .menu{
     display:none !important;          
-    position:absolute; top:90%; right:0; 
+    position:absolute; 
+    top:90%; 
+    right:0; 
     background:linear-gradient(180deg, rgba(58,25,114,1), rgba(145,50,138,1));
-    flex-direction:column; padding:16px; width:220px; border-radius:12px 0 0 12px;
+    flex-direction:column; 
+    padding:16px; 
+    width:220px; 
+    border-radius:12px 0 0 12px;
   }
  
 
@@ -91,25 +101,29 @@ header {
   color: #d718ca;
 }
 /* КІНЕЦЬ ХЕДЕРУ*/
+
+
 main {
-  width: 600px;       /* або max-width */
-  margin: 0 auto;     /* автоматичні відступи по боках */
+  width: 600px;
+  margin: 0 auto;   
   background: lightgray;
 }
 .photo_graphiti,
 .mobile_photo_graphiti{
   position: absolute;
-  inset: 0;          /* = top:0; right:0; bottom:0; left:0; */
+  inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* красиво вміщує з обрізкою */
+  object-fit: cover; 
 }
 
-/* desktop: показуємо desktop-картинку */
-.photo_graphiti{ z-index: 1; display: block; }
-.mobile_photo_graphiti{ z-index: 2; display: none; }
+.photo_graphiti{ 
+  z-index: 1; 
+  display: block; }
+.mobile_photo_graphiti{ 
+  z-index: 2; 
+  display: none; }
 
-/* mobile: ховаємо desktop-картинку, показуємо mobile */
 @media (max-width:650px){
   .photo_graphiti{ display: none; }
   .mobile_photo_graphiti{ display: block; }
@@ -142,28 +156,32 @@ z-index: 10;
 
 .telegram_button{
   width: 250px;
-height: 56px;
-position: absolute;
-border-radius: 25.07px;
-z-index: 25;
-background-color:rgba(249, 249, 249, 1);
-top: 600px;
-left: 10%;
+  height: 56px;
+  position: absolute;
+  border-radius: 25.07px;
+  z-index: 25;
+  background-color:rgba(249, 249, 249, 1);
+  top: 600px;
+  left: 10%;
 }
 
-.telegram_button a{top: 15px; position: relative;
-text-align: center;left: 30%; color: rgba(236, 18, 116, 1);
+.telegram_button a{
+  top: 15px; 
+  position: relative;
+  text-align: center;
+  left: 30%; 
+  color: rgba(236, 18, 116, 1);
 }
 
 .when-and-where{
   text-align: left;
   color: rgba(249, 249, 249, 1);
   width: 150px;
-margin-top: 20px;
-z-index: 25;
-top: 565px;
-left: 50%;
-position: relative;
+  margin-top: 20px;
+  z-index: 25;
+  top: 565px;
+  left: 50%;
+  position: relative;
 }
 
 .when-and-where_img{
@@ -195,7 +213,6 @@ position: relative;
 
 .poles {
   color: rgba(249, 249, 249, 1);
-
   max-width: 1100px;
   margin: 120px auto 80px;
   padding: 0 16px;
@@ -205,7 +222,6 @@ position: relative;
   background: transparent;
 }
 
-/* блок */
 .pole {
   position: relative;
   display: grid;
@@ -217,10 +233,9 @@ position: relative;
   padding: 28px 32px;
   border: 2px solid rgba(255, 255, 255, 0.75);
   border-radius: 28px;
-  background: transparent;   /* повністю прозорий */
+  background: transparent;   
 }
 
-/* заголовок */
 .pole-title {
   margin: 0;
   font-weight: 800;
@@ -229,7 +244,6 @@ position: relative;
   letter-spacing: .5px;
 }
 
-/* текст */
 .pole-text {
   margin: 0;
   font-size: clamp(14px, 1.5vw, 18px);
@@ -238,7 +252,6 @@ position: relative;
 }
 
 
-/* адаптив */
 @media (max-width: 860px) {
   .pole {
     grid-template-columns: 1fr;
@@ -300,7 +313,7 @@ position: relative;
 .photo_graphiti,
 .mobile_photo_graphiti{
   position: absolute;
-  inset: 0;         /* top/right/bottom/left = 0 */
+  inset: 0;         
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -349,7 +362,7 @@ position: relative;
     margin: 0 0 16px 0; 
   }
   
-  /* Білий блок */
+ 
   .tg-card{
     background: #ffffff;
     border-radius: 32px;
@@ -361,7 +374,6 @@ position: relative;
     box-shadow: 0 8px 24px rgba(0,0,0,.12);
   }
   
-  /* Текст */
   .tg-text{
     font-family: Gilroy, system-ui, sans-serif;
     font-weight: 500;            
@@ -371,7 +383,7 @@ position: relative;
     margin: 0;
   }
   
-  /* Права колонка з іконкою */
+
   .tg-icon-wrap{
     display: grid;
     place-items: center;
@@ -415,10 +427,6 @@ position: relative;
   .tg-card:hover .tg-icon-wrap{
     background-color: rgba(249, 249, 249, 1);
   }
-
-
- 
-
 
 
 .section4{ 
@@ -466,9 +474,6 @@ position: relative;
   margin: 0 auto;
 
 }
-
-
-
 .track{ display:flex; 
   transition: transform .45s ease; 
   will-change: transform 
@@ -491,22 +496,55 @@ position: relative;
   object-fit: cover;
 }
 @media (max-width:800px){ 
-  .slide{ grid-template-columns:1fr } 
-  .slide img{ width:100%; height:300px; border: 4px solid #111;
-    object-fit: cover; max-width: 350px; margin: 0 auto; } 
+  .slide{ 
+    grid-template-columns:1fr } 
+  .slide img{ 
+    width:100%; 
+    height:300px; 
+    border: 4px solid #111;
+    object-fit: cover; 
+    max-width: 350px; 
+    margin: 0 auto; } 
   
 }
-.slide-media{ display:flex; flex-direction:column; align-items:center; gap:12px; }
-.infoSpikers{ color:#fff; display:grid;
+.slide-media{ 
+  display:flex; 
+  flex-direction:column;
+  align-items:center; 
+  gap:12px; }
+.infoSpikers{ color:#fff; 
+  display:grid;
   grid-template-columns:1fr 280px;
   grid-template-areas:'title title' 'subtitle subtitle' 'talk meta';
   gap:16px 22px;
 }
-.NameSpiker{ grid-area:title; margin:0; font-weight:800; font-size:clamp(28px,4vw,48px); line-height:1.1 }
-.positionOfSpiker{ grid-area:subtitle; margin:0; color:rgba(255,255,255,.85); font-size:clamp(16px,2.2vw,22px) }
-.talk-card{ grid-area:talk; background:#fff; color:#111; border-radius:22px; padding:18px 20px; box-shadow:0 12px 30px rgba(0,0,0,.25) }
-.talk-card h3{ margin:0 0 6px; font-size:clamp(18px,2.4vw,26px) }
-.talk-card p{ margin:0; color:#555; line-height:1.45 }
+.NameSpiker{ 
+  grid-area:title;
+   margin:0; 
+   font-weight:800; 
+   font-size:clamp(28px,4vw,48px); 
+   line-height:1.1 }
+.positionOfSpiker{ 
+  grid-area:subtitle; 
+  margin:0; 
+  color:rgba(255,255,255,.85); 
+  font-size:clamp(16px,2.2vw,22px) 
+}
+.talk-card{ 
+  grid-area:talk; 
+  background:#fff; 
+  color:#111; 
+  border-radius:22px; 
+  padding:18px 20px; 
+  box-shadow:0 12px 30px rgba(0,0,0,.25) }
+.talk-card h3{ 
+  margin:0 0 6px; 
+  font-size:clamp(18px,2.4vw,26px) }
+.talk-card p{ 
+  margin:0; 
+  color:#555; 
+  line-height:1.45 
+}
 .meta-card{ 
   grid-area:meta;
   background:#fff; 
@@ -571,21 +609,20 @@ position: relative;
   cursor: pointer;
   background: #555;
   color: #fff;
-  font-size: 28px;   /* зменшив щоб не було «здвоєних лапок» */
+  font-size: 28px;   
   z-index: 55;
 }
 .prev { left: 8px; }
 .next { right: 8px; }
 
 
-  /* Utilities */
 .hidden{ display:none !important }
 
 .social-icons {
-  margin-top: 12px;                /* відступ від фото */
+  margin-top: 12px;
   display: flex;
-  justify-content: center;         /* центруємо по ширині */
-  gap: 16px;                       /* відстань між іконками */
+  justify-content: center;         
+  gap: 16px;                      
 }
 
 .social-icons a {
@@ -595,14 +632,13 @@ position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-               /* білий фон */
   box-shadow: 0 4px 10px rgba(0,0,0,.2);
 
 }
 
 .social-icons a:hover {
-  background: #ec1274;             /* підсвітка при наведенні */
-  transform: scale(1.1);           /* легкий зум */
+  background: #ec1274;    
+  transform: scale(1.1);
 }
 
 .social-icons img {
@@ -612,52 +648,45 @@ position: relative;
 
 /* SECTION 5 */
 
-
-
-
 .section5{
-  line-height: 0;               /* щоб між картинками не було “повітря” */
+  line-height: 0;               
 }
 
-/* 1) Банер */
 .prizes-banner{
   position: relative;
   overflow: hidden;
 }
 
-/* Перша картинка як фон банера */
 .prizes-img{
   display: block;
   width: 100%;
-  height: clamp(280px, 45vw, 520px);  /* адаптивна висота */
+  height: clamp(280px, 45vw, 520px);  
   object-fit: cover;
-  filter: brightness(.85);            /* трохи затемнити для читабельності */
+  filter: brightness(.85);           
 }
 
-/* 2) Картка з текстом поверх з блюром */
 .prizes-card{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
-  /* нове */
-  max-width: 900px;   /* обмежує ширину блока */
-  width: 80%;         /* щоб був адаптивний */
-  margin: 0 auto;     /* автоматично центрує */
+  max-width: 900px;   
+  width: 80%;         
+  margin: 0 auto;     
   
   padding: 24px;
   background: rgba(0,0,0,0.4);
   border-radius: 16px;
   color: #fff;
-  text-decoration: none;  /* прибирає підкреслення */
+  text-decoration: none;  
   color: #fff;    
 }
 
 .prizes-card::before{
   content: "";
   position: absolute;
-  inset: auto 50% 12% 50%;            /* розміри карточки */
+  inset: auto 50% 12% 50%;            
   transform: translateX(-50%);
   width: min(880px, 88vw);
   border-radius: 22px;
@@ -668,7 +697,6 @@ position: relative;
   z-index: 0;
 }
 
-/* Контент зверху псевдоелемента */
 .prizes-title,
 .prizes-text{
   position: relative;
@@ -693,7 +721,6 @@ position: relative;
 }
 .prizes-text + .prizes-text{ margin-top: 6px;line-height: 2.1; }
 
-/* 3) Друга картинка — одразу під банером, без шва */
 .prizes-decor{
   display: block;
   width: 100%;
@@ -702,7 +729,6 @@ position: relative;
   padding: 0;
 }
 
-/* Секція з фото-фоном */
 .org{
   position: relative;
   padding: clamp(28px, 5vw, 56px) 0;
@@ -713,7 +739,6 @@ position: relative;
   background-repeat: no-repeat;
 }
 
-/* внутрішній контейнер */
 .org__wrap{
   width: min(1100px, 92vw);
   margin: 0 auto;
@@ -721,16 +746,14 @@ position: relative;
   gap: clamp(16px, 2.6vw, 24px);
 }
 
-/* універсальна «скляна» картка */
 .org__card, .org__row--hero{
   position: relative;
   padding: clamp(14px, 2.2vw, 22px) clamp(16px, 3vw, 28px);
   border-radius: 22px;
   border: 1.5px solid rgba(255, 255, 255, 0.6);
-  
+
 }
 
-/* Hero (верхній блок з логотипом і заголовком) */
 .org__row--hero{
   display: grid;
   gap: 10px;
@@ -745,7 +768,6 @@ position: relative;
   
 }
 
-/* Сітка 2‑го ряду */
 .org__row--two{
   display: grid;
   grid-template-columns: 1fr 2.2fr;
@@ -757,12 +779,21 @@ position: relative;
   font-weight: 900; 
   font-size: clamp(28px, 6vw, 48px); }
 
-/* Заголовки/текст */
-.org__subtitle{ margin: 0 0 6px; font-weight: 800; font-size: clamp(18px, 3.2vw, 26px); }
-.org__lead{ margin: 0; font-style: italic; opacity: .95; }
-.org__text{ margin: 0; line-height: 1.35; opacity: .95; }
+.org__subtitle{ 
+  margin: 0 0 6px; 
+  font-weight: 800; 
+  font-size: clamp(18px, 3.2vw, 26px); }
+.org__lead{ 
+  margin: 0; 
+  font-style: italic; 
+  opacity: .95; 
+}
+.org__text{ 
+  margin: 0; 
+  line-height: 1.35; 
+  opacity: .95; 
+}
 
-/* Рядок з CTA */
 .org__row--cta{
   display: grid;
   grid-template-columns: 2fr 1.1fr;
@@ -771,12 +802,19 @@ position: relative;
 }
 
 /* Кнопки */
-.org__cta{ display: grid; gap: 12px; align-content: start; }
+.org__cta{ 
+  display: grid; 
+  gap: 12px; 
+  align-content: start; }
 .org__btn{
-  display: grid; place-items: center;
-  height: 56px; padding: 0 20px;
+  display: grid; 
+  place-items: center;
+  height: 56px;
+   padding: 0 20px;
   border-radius: 999px;
-  background: #fff; color: #1a0e33; text-decoration: none;
+  background: #fff; 
+  color: #1a0e33; 
+  text-decoration: none;
   font-weight: 700;
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
   
