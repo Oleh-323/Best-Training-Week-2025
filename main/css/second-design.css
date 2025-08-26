@@ -1,5 +1,8 @@
 :root { --panel:#0f0f0f; --radius:28px; }
 
+html, body { width: 100%; overflow-x: hidden; }
+* { box-sizing: border-box; }
+
 html {
   scroll-behavior: smooth;
 }
@@ -439,7 +442,20 @@ position: relative;
     height: 50%;
   }
   
-  
+  @media (max-width: 768px) {
+    .tg-card {
+      grid-template-columns: 1fr; /* одна колонка */
+      text-align: center;
+      padding: 24px;
+    }
+    .tg-icon-wrap {
+      margin-top: 16px; /* відступ зверху */
+      margin-left: auto;
+      margin-right: auto; /* центрувати іконку */
+      width: 90px;        /* можна зменшити */
+      height: 90px;
+    }
+  }
   .tg-card:hover{
     transition: background-color 0.3s ease;
     background-color: rgba(236, 18, 116, 1);
