@@ -200,11 +200,17 @@ main {
     gap: 140px;             /* відстань між кнопкою та текстом */
     z-index: 55;
   }
+  @media (min-width:1440px){
+    .info-block {
+      top: 550px;
+    }
+  }
 }
 .info-block {
   position: absolute;
-  top: 725px;
+  bottom: clamp(24px, 12vh, 190px);
   left: 10%;
+  top: 550px;
   display: flex;
   align-items: center;   /* вирівнює по вертикалі */
   gap: 140px;             /* відстань між кнопкою та текстом */
