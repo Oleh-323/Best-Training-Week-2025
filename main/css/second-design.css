@@ -203,7 +203,7 @@ main {
 }
 .info-block {
   position: absolute;
-  top: 575px;
+  top: 725px;
   left: 10%;
   display: flex;
   align-items: center;   /* вирівнює по вертикалі */
@@ -748,6 +748,7 @@ main {
   font-size:14px 
 }
 
+
 @media (max-width:860px){
   .slide{ grid-template-columns:1fr; }
   .infoSpikers{
@@ -958,6 +959,7 @@ main {
   margin: 0; 
   font-style: italic; 
   opacity: .95; 
+  line-height: 1.35;
 }
 .org__text{ 
   margin: 0; 
@@ -990,7 +992,10 @@ main {
   box-shadow: 0 8px 24px rgba(0,0,0,.18);
   
 }
-.org__btn:hover{ transform: translateY(-1px); }
+
+.org__btn:hover{ transform: translateY(-1px); 
+
+}
 .org__btn--ghost{
   background: #fff; color: #000000;
   border: 2px solid #fff;
@@ -1491,18 +1496,14 @@ letter-spacing: 0%;
 
 }
 .apostrof{
-  width: 75px;
-  height: 55px;
-  left: 10%;
-  position: absolute;
+  width: clamp(28px, 5vw, 56px); /* адаптивна ширина */
+  height: auto;
+  transform: translate(-80%, -50%);   /* трохи підняти, за потреби підкрути */
 }
 
 @media (max-width:560px){
-  .apostrof{
-    left: 5%;
-    width: 55px;
-    height: 35px;
-  }
+  .apostrof{ width: 36px; transform: translate(-80%, -50%); }
+  
 }
 
 /* =======================    Galary        ===========================*/
