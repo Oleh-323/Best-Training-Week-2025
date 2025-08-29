@@ -293,7 +293,7 @@ main {
   rgba(22, 11, 40, 1); */
   z-index: 15 ;              /* вище за section1 (яка має z-index:10) */
   margin-top: -140px;       /* налізання хмарки в hero; підбери значення */
-  padding: 300px 0 160px;   /* зменши свій гігантський padding 750px */
+  padding: 180px 0 160px;   /* зменши свій гігантський padding 750px */
   overflow: visible;        /* свій стек для ::before */
   background: url("../resources/Union_big.png") top center repeat-x;
 }
@@ -383,51 +383,7 @@ main {
     font-size: 16px;
   }
 }
-@media (max-width: 1360px) {
-  .pole{
-    top: -1200px;
-  }
-  @media (max-width: 1160px) {
-    .pole{
-      top: -1000px;
-    }
-    @media (max-width: 1000px) {
-      .pole{
-        top: -800px;
-      }
-      @media (max-width: 860px) {
-        .pole{
-          top: -2900px;
-        }
-        @media (max-width: 800px) {
-          .pole{
-            top: -2600px;
-          }
-          @media (max-width: 735px) {
-            .pole{
-              top: -2200px;
-            }
-            @media (max-width: 640px) {
-              .pole{
-                top: -1800px;
-              }
-              @media (max-width: 545px) {
-                .pole{
-                  top: -1600px;
-                }
-                @media (max-width: 500px) {
-                  .pole{
-                    top: -1200px;
-                  }
-                }
-              }
-            }
-        }
-      }
-    }
-  }
-}
-}
+
 .photo_graphiti,
 .mobile_photo_graphiti{
   position: absolute; inset:0;
@@ -458,18 +414,7 @@ main {
     top: -1400px;
     
   }
-  @media (max-width: 1300px){
-    .tg-section{top: -1200px;}
-    @media (max-width: 1161px){
-      .tg-section{top: -1000px;}
-      @media (max-width: 1000px){
-        .tg-section{top: -800px;}
-        @media (max-width: 860px){
-          .tg-section{top: -1400px;}
-        }
-      }
-    }
-  }
+
   
 
   .tg-title{
