@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Best Training Week 2025</title>
+    <link rel="icon" type="image/png" href="../resources/Logo.png">
     <link rel="stylesheet" href="../css/second-design.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -15,7 +16,7 @@
       <div class="header-inner">
         <div class="logo-block">
           <img src="../resources/Logo.png" class="logo-img" alt="">
-          <a class="BTW-text-header">BEST TRAINING WEEK</a>
+          <a href="#BestMAIN" class="BTW-text-header">BEST TRAINING WEEK</a>
         </div>
     
   
@@ -39,7 +40,7 @@
   <img class="photo_graphiti" src="../resources/graphiti_Main.png" alt="Main_page">
   <img class="mobile_photo_graphiti" src="../resources/mobile_main_graphiti.png" alt="Main_page_phone">
   -->
-  <div class="Btw-text-main">
+  <div class="Btw-text-main" id="BestMAIN">
     BEST TRAINING WEEK
   </div>
   
@@ -120,6 +121,10 @@
   
   <div class="container wrap" id="speakers">
     <h1 class="spikertitle">Спікери</h1>
+
+    <div class="carousel-wrap">            <!-- НОВА ОБГОРТКА -->
+      <button class="arrow prev" id="prev">‹‹</button>
+
     <div class="carousel" data-carousel>
       <div class="track" id="track">
 
@@ -251,9 +256,10 @@
         </div>
         
       </div>
-      <button class="arrow prev" id="prev">‹‹</button>
-      <button class="arrow next" id="next">››</button>
+
     </div>
+    <button class="arrow next" id="next">››</button>
+  </div>
   </div>
 </section>
 
@@ -264,16 +270,16 @@
 
     <div class="prizes-card">
       <h2 class="prizes-title">Розіграші</h2>
-      <p class="prizes-text">
+      <p class="prizes-text"><a>
         Під час BEST Training Week на тебе чекають інтерактиви та розіграші у форматі вікторин, 
-        де можна перевірити свої знання, позмагатися з іншими та весело провести час.
+        де можна перевірити свої знання, позмагатися з іншими та весело провести час.</a>
       </p>
-      <p class="prizes-text">
-        Головний розіграш — в останній день події серед активних учасників.
+      <p class="prizes-text"><a>
+        Головний розіграш — в останній день події серед активних учасників.</a>
       </p>
-      <p class="prizes-text">
+      <p class="prizes-text"><a>
         Спеціальний розіграш за донат — зроби свій внесок на благодійність та отримай
-        шанс виграти приємні подарунки.
+        шанс виграти приємні подарунки.</a>
       </p>
     </div>
   </div>
@@ -502,7 +508,7 @@
   <section class="bg-wrapper">
   <div class="reviews" id="reviews">
     <h1 class="title_reviews"><img class="apostrof" src="../resources/apostrof.png">Відгуки</h1>
-
+    <div class="reviews-wrapper">
     <div class="viewport_reviews">
       <div class="carousel_reviews">
 
@@ -552,23 +558,7 @@
         </div>
 
         <!-- arrows (як у твоїй другій каруселі) -->
-        <div class="arrows_reviews">
-          <!-- для rv1 -->
-          <label class="prev_reviews" for="rv5" data-for="rv1">‹</label>
-          <label class="next_reviews" for="rv2" data-for="rv1">›</label>
-          <!-- rv2 -->
-          <label class="prev_reviews" for="rv1" data-for="rv2">‹</label>
-          <label class="next_reviews" for="rv3" data-for="rv2">›</label>
-          <!-- rv3 -->
-          <label class="prev_reviews" for="rv2" data-for="rv3">‹</label>
-          <label class="next_reviews" for="rv4" data-for="rv3">›</label>
-          <!-- rv4 -->
-          <label class="prev_reviews" for="rv3" data-for="rv4">‹</label>
-          <label class="next_reviews" for="rv5" data-for="rv4">›</label>
-          <!-- rv5 -->
-          <label class="prev_reviews" for="rv4" data-for="rv5">‹</label>
-          <label class="next_reviews" for="rv1" data-for="rv5">›</label>
-        </div>
+    
 
         <!-- dots -->
         <div class="dots_reviews">
@@ -581,6 +571,24 @@
 
       </div>
     </div>
+    <div class="arrows_reviews">
+      <!-- для rv1 -->
+      <label class="prev_reviews" for="rv5" data-for="rv1">‹</label>
+      <label class="next_reviews" for="rv2" data-for="rv1">›</label>
+      <!-- rv2 -->
+      <label class="prev_reviews" for="rv1" data-for="rv2">‹</label>
+      <label class="next_reviews" for="rv3" data-for="rv2">›</label>
+      <!-- rv3 -->
+      <label class="prev_reviews" for="rv2" data-for="rv3">‹</label>
+      <label class="next_reviews" for="rv4" data-for="rv3">›</label>
+      <!-- rv4 -->
+      <label class="prev_reviews" for="rv3" data-for="rv4">‹</label>
+      <label class="next_reviews" for="rv5" data-for="rv4">›</label>
+      <!-- rv5 -->
+      <label class="prev_reviews" for="rv4" data-for="rv5">‹</label>
+      <label class="next_reviews" for="rv1" data-for="rv5">›</label>
+    </div>
+  </div>
   </div>
 
   <section class="galary" id="galery">
