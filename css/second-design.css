@@ -297,10 +297,10 @@ main {
 }  
 /* SECTION 3*/
 @media (min-width:1440px){}
-
+ 
 /*
 .section2{
-  background: url("./resources/Gradient_infp_Pc.png") center/cover repeat-x,
+   background:  url("./resources/Gradient_infp_Pc.png") center/cover repeat-x,
   rgba(22, 11, 40, 1);
   top: 0px;
   position: relative;
