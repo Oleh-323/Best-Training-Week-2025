@@ -169,7 +169,7 @@ main {
   min-height: clamp(720px, 100vh, 1080px); /* реальна висота hero-блоку */
   overflow: visible;            /* щоб фон не вилазив за краї */
   padding-top: 80px;
-  background: url("../resources/graphiti_Main.png") center/cover no-repeat;
+  background: url("/resources/graphiti_Main.png") center/cover no-repeat;
   z-index: 10;
 }
 
@@ -300,7 +300,7 @@ main {
 
 /*
 .section2{
-  background: url("../resources/Gradient_infp_Pc.png") center/cover repeat-x,
+  background: url("./resources/Gradient_infp_Pc.png") center/cover repeat-x,
   rgba(22, 11, 40, 1);
   top: 0px;
   position: relative;
@@ -314,7 +314,7 @@ main {
 
   /* 1 елемент = 2 шари фону */
   background:
-    url("../resources/Union_big.png") top center / auto 1700px repeat-x,
+    url("/resources/Union_big.png") top center / auto 1700px repeat-x,
     linear-gradient(180deg, rgba(22, 11, 40, 1) 0%, #8031AD 55%, #A13ED1 100%);      
   background-repeat: repeat-x, no-repeat;
   padding: 120px 0 160px;
@@ -325,7 +325,7 @@ main {
 @media (max-width: 650px){
   .section3{
     background:
-    url("../resources/Union_big.png") top center / auto 2200px repeat-x,
+    url("/resources/Union_big.png") top center / auto 2200px repeat-x,
     linear-gradient(180deg, rgba(22, 11, 40, 1) 0%, #8031AD 55%, #A13ED1 100%);
     
     
@@ -513,7 +513,7 @@ main {
     
   }
   .tg-card:hover .photoIcon{
-    content: url("../resources/light_purple.png");
+    content: url("/resources/light_purple.png");
   }
   .tg-card:hover .tg-icon-wrap{
     background-color: rgba(249, 249, 249, 1);
@@ -541,7 +541,7 @@ main {
 .section4{ 
   position: relative;
   z-index: 5;
-  background: url("../resources/phine.png") center/cover no-repeat;
+  background: url("/resources/phine.png") center/cover no-repeat;
   padding: clamp(40px, 4vw, 60px) 20px;
 }
 
@@ -792,7 +792,7 @@ main {
 .prizes-banner {
   position: relative;
   overflow: hidden;
-  background: url("../resources/розіграш.png");
+  background: url("/resources/розіграш.png");
   background-size: cover;
   height: clamp(280px, 45vw, 520px); 
   min-height: 400px; 
@@ -883,7 +883,7 @@ main {
   position: relative;
   padding: clamp(28px, 5vw, 56px) 0;
   color: #fff;
-  background-image: url("../resources/graphiti_purple.png");
+  background-image: url("/resources/graphiti_purple.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1000,7 +1000,7 @@ main {
 
 
 .bg-commons {
-  background: url("../resources/Frame\ 25.png") center/cover no-repeat;
+  background: url("/resources/Frame\ 25.png") center/cover no-repeat;
 }
 
 /* =============================== */
@@ -1016,7 +1016,7 @@ main {
   margin-bottom: 0;
   padding-bottom: 0;
   place-items:center;
-  background: url("../resources/Frame 25.png") center/cover no-repeat;
+  background: url("/resources/Frame 25.png") center/cover no-repeat;
 }
 .section6_second::before{
   content:""; position:fixed; inset:0;
@@ -1307,8 +1307,8 @@ vertical-align: middle;
   position: relative;
   z-index: 1;
   background-image:
-    url("../resources/grandgradiontbuble.png"),
-    url("../resources/Frame 25.png");
+    url("./resources/grandgradiontbuble.png"),
+    url("./resources/Frame 25.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center;
   background-size: cover, cover;
