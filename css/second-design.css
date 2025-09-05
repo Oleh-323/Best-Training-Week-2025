@@ -32,6 +32,15 @@ body{
   margin: 0;
   font-family: 'Gilroy', sans-serif;
 }
+p{
+  font-family: Gilroy, sans-serif;
+}
+a{
+  font-family:  Gilroy, sans-serif;
+}
+h1,h2,h3{
+  font-family:  Gilroy, sans-serif;
+}
 
 header {
   position: fixed;
@@ -624,23 +633,25 @@ main {
   grid-template-columns:1fr 280px;
   grid-template-areas:'title title' 'subtitle subtitle' 'talk meta';
   gap: 30px 22px;
-  
+  align-items: start;
 }
 .NameSpiker{ 
   grid-area:title;
    margin:0; 
    font-weight:800; 
-   font-size:clamp(28px,4vw,48px); 
+   font-size:clamp(22px,4vw,31px); 
    line-height:1.1 ;
    position: relative;
+ 
   }
 .positionOfSpiker{ 
   grid-area:subtitle; 
   margin:0; 
   color:rgba(255,255,255,.85); 
-  font-size:clamp(16px,2.2vw,22px) 
+  font-size:clamp(16px,2.2vw,20px); 
+  
 }
-@media (max-width: 650px){
+@media (max-width: 860px){
   .positionOfSpiker{
     text-align: center;     /* центрування */
     font-size: 14px;        /* трохи менший текст */
@@ -651,9 +662,28 @@ main {
   }
   .NameSpiker{
     white-space: nowrap;
-    font-size: clamp(16px, 6vw, 48px);
-    left: 10px;
+    font-size: clamp(14px, 5vw, 22px); 
+    
+    text-align: center;
   }
+  .slide:nth-child(1) .infoSpikers { 
+    margin-top: -30px;    /* або padding-top: 0 */
+  }
+
+  .slide:nth-child(2) .infoSpikers { 
+    margin-top: -90px;    /* або padding-top: 0 */
+  }
+
+  .slide:nth-child(3) .infoSpikers { 
+    margin-top: -20px;   /* або padding-top: 0 */
+  } 
+
+  .slide:nth-child(4) .infoSpikers { 
+    margin-top: -75px;   /* або padding-top: 0 */
+  } 
+  .slide:nth-child(5) .infoSpikers {
+    margin-top: -10px;  /* або padding-top: 0 */
+  } 
 }
 .talk-card{ 
   grid-area:talk; 
@@ -1256,7 +1286,7 @@ main {
   font-weight:800; 
   text-shadow:0 1px 2px rgba(0,0,0,.35);
 font-style: Extrabold;
-font-size: 22px;
+font-size: 20px; 
 letter-spacing: 0%;
 text-align: center;
 vertical-align: middle;
@@ -1269,7 +1299,7 @@ vertical-align: middle;
   opacity:.7;
   font-family: Gilroy;
   font-style: Light;
-  font-size: 19px;
+  font-size: 15px;
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
