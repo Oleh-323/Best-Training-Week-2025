@@ -1319,8 +1319,8 @@ vertical-align: middle;
   backdrop-filter:blur(6px);
   box-shadow:0 4px 14px rgba(0,0,0,.35);
 }
-.socials img{ width:26px; height:26px; display:block; }
-.socials a{ line-height:0; transition:transform .18s ease, filter .18s ease; }
+.socials img{ width:26px; height:26px; display:block; background-color: aliceblue; border-radius: 50%; }
+.socials a{ line-height:0; transition:transform .18s ease, filter .18s ease; } 
 .socials a:hover{ transform:scale(1.12); filter:brightness(1.1); }
 
 /*SECTION 7============================ */
