@@ -538,7 +538,10 @@ main {
       width: 90px;        /* можна зменшити */
       height: 90px;
     }
-  }
+
+
+    
+  } 
   .tg-card:hover{
     transition: background-color 0.3s ease;
     background-color: rgba(236, 18, 116, 1);
