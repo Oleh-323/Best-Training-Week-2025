@@ -462,7 +462,7 @@ main {
     position: relative;
     z-index: 35;
     top: -1400px;
-    
+    font-family: 'Gilroy', sans-serif;
   }
 
   
@@ -473,7 +473,8 @@ main {
     font-size: clamp(28px, 4vw, 48px);
     color: #ffffff;
     text-align: center;          
-    margin: 0 0 16px 0; 
+    margin: 0 0 16px 0;
+    font-family: 'Gilroy', sans-serif; 
   }
   
  
@@ -489,7 +490,7 @@ main {
   }
   
   .tg-text{
-    font-family: Gilroy, system-ui, sans-serif;
+    font-family: 'Gilroy', sans-serif;
     font-weight: 500;            
     font-size: 18px;
     line-height: 1.6;            
